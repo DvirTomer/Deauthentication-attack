@@ -16,9 +16,9 @@ Steps:
 
 3. now, please wait for the result (after the scan will finish).
 
-4. please choose and enter a netword BSSID from the list.
+4. please choose and enter a network BSSID from the list.
 
-5. please choose and enter a netword channel from the list.
+5. please choose and enter a network channel from the list.
 
 6. after the client that you want to disconnect is shown, please stop the scan by ctrl+c.
 
